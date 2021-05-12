@@ -1,15 +1,15 @@
 import java.util.Scanner;
 
 class UserInputScanner {
+    private Scanner scanner = new Scanner(System.in);
+
     long getUserNumber() {
-        var scanner = new Scanner(System.in);
         System.out.println("Enter your number:");
 
         return scanner.nextLong();
     }
 
-    String[] getUserLine() {
-        var scanner = new Scanner(System.in);
+    String[] getUserWords() {
         System.out.println("Enter your line:");
         var userLine = scanner.nextLine();
         var userWordsFromLine = userLine.split(" ");
@@ -18,5 +18,11 @@ class UserInputScanner {
         }
 
         return userWordsFromLine;
+    }
+
+    String getUserLine() {
+        System.out.println("Enter your line:");
+
+        return scanner.nextLine();
     }
 }
