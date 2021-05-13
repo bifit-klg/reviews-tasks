@@ -1,7 +1,7 @@
 import java.math.BigDecimal;
 import java.math.RoundingMode;
 
-public class Calculator {
+class Calculator {
     private final static String MULTIPLY = "*";
     private final static String MULTIPLY_ESCAPED = "\\*";
     private final static String DIVIDE = "/";

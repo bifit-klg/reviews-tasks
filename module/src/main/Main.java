@@ -5,6 +5,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
     }
 
     private static void task1() {
@@ -27,6 +28,13 @@ public class Main {
         var userLine = userInput.getUserLine();
         var calculator = new Calculator();
         System.out.println("Answer is: " + calculator.calculate(userLine));
+    }
+
+    private static void task4() throws Exception {
+        var sourceName = userInput.getUserLine();
+        var targetName = userInput.getUserLine();
+        var copier = new Copier();
+        System.out.println("Your time is: " + copier.copy(sourceName, targetName) + " (mm:ss:mils)");
     }
 }
 
